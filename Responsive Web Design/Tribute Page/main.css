@@ -1,0 +1,153 @@
+html {
+  font-family: "Inconsolata", monospace;
+}
+body {
+  width: 100vw;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  max-width: 100%;
+  padding: 2rem;
+}
+
+#title {
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+figure {
+  margin: 1.5rem 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  margin: 1rem auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+figcaption {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+#tribute-info {
+  max-width: 50rem;
+}
+
+#tribute-info h3 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+#tribute-info ul {
+  margin: 1rem auto;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  padding-inline-start: 1rem;
+}
+
+#tribute-info li {
+  margin: 1.5rem 0;
+}
+
+#tribute-info li > strong {
+  font-size: 1rem;
+}
+
+#tribute-info p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#tribute-info p a {
+  color: #113cfc;
+}
+
+#tribute-info p a:visited {
+  color: #753188;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 2rem 4rem;
+  }
+
+  #title {
+    font-size: 3rem;
+  }
+
+  img {
+    max-width: 90%;
+  }
+
+  figcaption {
+    font-size: 1rem;
+  }
+
+  #tribute-info {
+    margin: 1.5rem auto;
+    padding: 1rem 3rem;
+  }
+
+  #tribute-info h3 {
+    font-size: 1.5rem;
+  }
+
+  #tribute-info ul {
+    margin: 1rem auto;
+    font-size: 1rem;
+    padding-inline-start: 1.5rem;
+  }
+
+  #tribute-info li > strong {
+    font-size: 1.125rem;
+  }
+
+  #tribute-info p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    padding: 3rem 12rem;
+  }
+
+  #title {
+    font-size: 4rem;
+  }
+
+  img {
+    max-width: 70%;
+  }
+
+  figure {
+    margin: 3rem 0;
+  }
+
+  #tribute-info {
+    margin: 4rem auto;
+    padding: 1rem 4rem;
+  }
+
+  #tribute-info h3 {
+    font-size: 2rem;
+  }
+
+  #tribute-info ul {
+    margin: 2rem auto;
+    font-size: 1.125rem;
+    padding-inline-start: 2rem;
+  }
+
+  #tribute-info li > strong {
+    font-size: 1.25rem;
+  }
+}
