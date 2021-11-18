@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Environmental Issues Survey</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="title">Environmental Issues Survey</h1>
+        <p id="description">
+          The Earth is a fine place and worth fighting for.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" class="form-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            class="form-input"
+            id="name"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" class="form-label" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" class="form-label" for="number">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            class="form-input"
+            min="5"
+            max="100"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p class="form-label">
+            What do you think would be the most sustainable alternative energy
+            source in the next 10 years?
+          </p>
+          <select
+            id="dropdown"
+            class="form-input"
+            name="alternate-enerrgy"
+            class="form-control"
+            required
+          >
+            <option disabled selected value>Select your choice</option>
+            <option value="coal">Coal</option>
+            <option value="wind">Wind</option>
+            <option value="water">Water</option>
+            <option value="electricity">Electricity</option>
+            <option value="solar">Solar</option>
+            <option value="nuclear">Nuclear</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p class="form-label">
+            How interested are you about preservation of the environment?
+          </p>
+          <label class="option-label">
+            <input
+              name="environment-preservation"
+              value="very-interested"
+              type="radio"
+              class="input-radio"
+              checked
+            />Very Interested
+          </label>
+          <label class="option-label">
+            <input
+              name="environment-preservation"
+              value="somewhat-interested"
+              type="radio"
+              class="input-radio"
+              checked
+            />Somewhat Interested
+          </label>
+          <label class="option-label">
+            <input
+              name="environment-preservation"
+              value="neutral"
+              type="radio"
+              class="input-radio"
+              checked
+            />Neutral
+          </label>
+        </div>
+        <div class="form-group">
+          <p class="form-label">
+            Which of the following do you think affect you the most?
+          </p>
+          <select
+            class="form-input"
+            id="most-like"
+            name="mostLike"
+            class="form-control"
+            required
+          >
+            <option disabled selected value>Select an option</option>
+            <option value="air-pollution">Air Pollution</option>
+            <option value="sound-pollution">Sound Pollution</option>
+            <option value="noise-pollution">Noise Pollution</option>
+            <option value="water-pollution">Water Pollution</option>
+            <option value="light-pollution">Light Pollution</option>
+            <option value="soil-pollution">Soil Pollution</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p class="form-label">
+            On which of the following platforms, have you heard about
+            environmental pollution?
+            <span class="clue">(Select all that apply)</span>
+          </p>
+
+          <label class="option-label"
+            ><input
+              name="prefer"
+              value="television"
+              type="checkbox"
+              class="input-checkbox"
+            />Television</label
+          >
+          <label class="option-label">
+            <input
+              name="prefer"
+              value="radio"
+              type="checkbox"
+              class="input-checkbox"
+            />Radio</label
+          >
+          <label class="option-label"
+            ><input
+              name="prefer"
+              value="newspaper"
+              type="checkbox"
+              class="input-checkbox"
+            />Newspaper</label
+          >
+          <label class="option-label"
+            ><input
+              name="prefer"
+              value="internet"
+              type="checkbox"
+              class="input-checkbox"
+            />Internet</label
+          >
+          <label class="option-label"
+            ><input
+              name="prefer"
+              value="academic-journals"
+              type="checkbox"
+              class="input-checkbox"
+            />Academic Journals</label
+          >
+          <label class="option-label"
+            ><input
+              name="prefer"
+              value="environment-groups"
+              type="checkbox"
+              class="input-checkbox"
+            />Environment Groups</label
+          >
+          <label class="option-label"
+            ><input
+              name="prefer"
+              value="friends"
+              type="checkbox"
+              class="input-checkbox"
+            />Friends or Colleagues</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Is there any other feedback that you would like to provide?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your feedback here..."
+          ></textarea>
+        </div>
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
